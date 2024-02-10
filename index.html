@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing Word</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <style>
+  body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Evita que a barra de rolagem apareça */
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#word {
+  position: absolute;
+  font-size: 24px;
+}
+  </style>
+  
+  
+  <div id="container">
+    <div id="word">WORD</div>
+  </div>
+  <script>
+  const word = document.getElementById('word');
+const container = document.getElementById('container');
+
+let dx = 1; // Direção horizontal
+let dy = 1; // Direção vertical
+let x = 0; // Posição horizontal inicial
+let y = 0; // Posição vertical inicial
+
+function updatePosition() {
+  const containerWidth = container.offsetWidth;
+  const containerHeight = container.offsetHeight;
+  const wordWidth = word.offsetWidth;
+  const wordHeight = word.offsetHeight;
+
+  x += dx;
+  y += dy;
+
+  if (x + wordWidth >= containerWidth || x <= 0) {
+    dx = -dx;
+    x += dx * 2;
+  }
+
+  if (y + wordHeight >= containerHeight || y <= 0) {
+    dy = -dy;
+    y += dy * 2;
+  }
+
+  word.style.left = `${x}px`;
+  word.style.top = `${y}px`;
+}
+
+setInterval(updatePosition, 10); // Atualiza a posição a cada 10 milissegundos
+
+  </script>
+</body>
+</html>
