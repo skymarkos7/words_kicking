@@ -1,5 +1,16 @@
-const words = document.querySelectorAll('.word');
+const wordsArray = ["WORD 1", "WORD 2", "WORD 3", "WORD 4", "WORD 5", "WORD 6", "WORD 77", "WORD 88", "WORD 9","WORD 99", "WORD 10"];
+
 const container = document.getElementById('container');
+
+// Cria as palavras dinamicamente a partir do array
+wordsArray.forEach((word, index) => {
+  const newWord = document.createElement('div');
+  newWord.classList.add('word');
+  newWord.textContent = word;
+  container.appendChild(newWord);
+});
+
+const words = document.querySelectorAll('.word');
 
 // Array para armazenar informações de cada palavra
 const wordData = [];

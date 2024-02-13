@@ -1,23 +1,22 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    overflow: hidden; /* Evita que a barra de rolagem apareça */
-  }
-  
-  #container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .word {
-    position: absolute;
-    font-size: 24px;
-  }
- 
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Don't show the scroolbar Evita que a barra de rolagem apareça */
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.word {
+  position: absolute;
+  font-size: 24px;
+}
+
 .title{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}  
-  
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
