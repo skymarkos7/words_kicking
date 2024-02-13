@@ -7,7 +7,7 @@ body, html {
 #container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 95%; /* Reduzimos a altura do container para acomodar o menu na parte inferior */
 }
 
 .word {
@@ -19,4 +19,24 @@ body, html {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#menu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
 }
