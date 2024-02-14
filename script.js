@@ -3,7 +3,7 @@
   2015: ["I", "Love", "Apple", "You", "Red", "Blue", "Pink", "Green"],
   2022: ["Apple", "Banana", "Orange", "Grape", "Pineapple", "Foot", "Hand", "Numbers", "Air"],
   2023: ["Dog", "Cat", "Bird", "Fish", "Turtle", "Rabbit", "Hamster", "Guinea Pig", "Parrot", "Mouse", "hand", "Numbers", "Numbers", "Air"],
-  2024: ["Dog", "Watermelon", "Cat", "Bird", "Fish", "Turtle", "Rabbit", "Car", "Hand", "Bicycle", "Motorcycle", "Bus", "Truck", "Train", "Airplane", "Numbers", "Air", "Boat", "Helicopter", "Subway", "Us", "They", "Tree", "Chair", "Fan", "Computer", "Door", "Television", "How", "Where", "People", "Person", "laptop", "Padlock", "Garden", "Gate", "Am", "be", "light", "Table", "Foot", "Hand", "Shoes", "Glass", "Hair", "Head", "Finger"]
+  2024: ["Dog", "Cat", "Bird", "Fish", "Turtle", "Rabbit", "Car", "Hand", "Bicycle", "Motorcycle", "Bus", "Truck", "Train", "Airplane", "Numbers", "Air", "Boat", "Helicopter", "Subway", "Us", "They", "Tree", "Chair", "Fan", "Computer", "Door", "Television", "How", "Where", "People", "Person", "laptop", "Padlock", "Garden", "Gate", "Am", "be", "light", "Table", "Foot", "Hand", "Shoes", "Glass", "Hair", "Head", "Finger"]
 };
 
 const container = document.getElementById('container');
