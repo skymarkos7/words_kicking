@@ -1,9 +1,9 @@
  // Dados para cada ano
  const yearData = {
-  2020: ["WORD 1", "WORD 2", "WORD 3", "WORD 4"],
+  2015: ["I", "Love", "Apple", "You", "Red", "Blue", "Pink"],
   2021: ["Apple", "Banana", "Orange", "Grape", "Watermelon", "Pineapple"],
   2022: ["Dog", "Cat", "Bird", "Fish", "Turtle", "Rabbit", "Hamster", "Guinea Pig", "Parrot", "Mouse"],
-  2023: ["Car", "Bicycle", "Motorcycle", "Bus", "Truck", "Train", "Airplane", "Boat", "Helicopter", "Subway"]
+  2024: ["Car", "Bicycle", "Motorcycle", "Bus", "Truck", "Train", "Airplane", "Boat", "Helicopter", "Subway", "Us", "They", "Tree", "Chair", "Fan", "Computer", "Door", "Television", "How", "Where", "People", "Person", "laptop", "Padlock", "Garden", "Gate"]
 };
 
 const container = document.getElementById('container');
@@ -37,8 +37,8 @@ function changeYear(year) {
   createWords(yearData[year]); // Atualiza as palavras com base no ano selecionado
 }
 
-// Inicializa as palavras com o ano de 2020
-changeYear(2020);
+// Inicializa as palavras com o ano de 2015
+changeYear(2015);
 
 function updatePosition() {
   const containerWidth = container.offsetWidth;
